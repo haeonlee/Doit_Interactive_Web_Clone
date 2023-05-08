@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+article {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+article: nth-of-type(1) {
+    padding: 0px;
+}
+
+article: nth-of-type(2) {
+    padding: 30px;
+
+    /* 기존 박스의 크기를 유지하면서 여백을 지정할 수 있음 */
+    box-sizing: border-box;
+}
